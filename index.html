@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato clone</title>
+  <script src="https://kit.fontawesome.com/e16ccc1378.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="deliver.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+
+  <!-- this is navbar and header -->
+
+  <header>
+
+
+
+    <nav>
+      <div class="rightnav">
+        <img src="logo.png" alt="logo" class="logo" />
+      </div>
+
+
+      <div class="middle">
+        <div class="down">
+          <i class="fa-solid fa-location-dot" style="color: #ff0322"></i>
+          <h5>Agra</h5>
+
+
+
+        </div>
+        <div class="input">
+          <h3>|</h3>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search For Restaurants And Hotels" />
+        </div>
+      </div>
+    
+
+
+      <div class="buttons">
+        
+     <div class="media" id="menu-item">
+         <button>Sign In</button>
+         <button>Sign up</button>
+      </div>
+
+        <div id="dark-btn" onclick="move()">
+          <span></span>
+        </div>
+
+        <img src="menu.png" alt="" onclick="togglemenu()">
+      </div>
+    </nav>
+
+
+
+    <div class="second">
+      <span>Home/</span>
+      <span>India/</span>
+      <span>Agra Restaurants</span>
+    </div>
+
+    <div class="third">
+      <div class="f1-image">
+        <div class="square tab-links active-link" onclick="openatab('square')">
+          <img src="deliver.png" alt="">
+        </div>
+
+        <h3>Delivery</h3>
+
+      </div>
+
+
+
+      <div class="f1-image">
+        <div class="circle tab-links" onclick="openatab('circle')">
+          <img src="Dining.png" alt="">
+        </div>
+
+        <h3>Dining</h3>
+
+      </div>
+
+
+      <div class="f1-image">
+        <div class="circle tab-links" onclick="openatab('circle1')">
+          <img src="nightlife.png" alt="">
+        </div>
+
+        <h3>NightLife</h3>
+
+      </div>
+    </div>
+  </header>
+
+
+  <hr>
+
+
+  <!-- this is main where first three were there-->
+
+  <main>
+    <div class="food">
+      <h2>Inspiration for your first order</h2>
+
+      <div class="flex">
+        <div class="food-images">
+          <img class="pizza" src="pizza.jpeg" alt="pizza">
+          <h4>Pizza</h4>
+        </div>
+
+
+        <div class="food-images">
+          <img class="pizza" src="cake.png" alt="pizza">
+          <h4>Cakes</h4>
+        </div>
+
+
+        <div class="food-images">
+          <img class="pizza" src="north.jpeg" alt="">
+          <h4>North-Indian</h4>
+        </div>
+
+        <div class="food-images">
+          <img class="pizza" src="paratha.png" alt="">
+          <h4>Paratha</h4>
+        </div>
+        <div class="food-images">
+          <img class="pizza" src="chicken.png" alt="">
+          <h4>Chicken</h4>
+        </div>
+
+        <div class="food-images">
+          <img class="pizza" src="idly.png" alt="">
+          <h4>Idli</h4>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <main>
+    <div class="food">
+      <h2>Top Brands For You</h2>
+      <div class="flex">
+        <div class="food-images">
+          <img class="pizza" src="mc2.png" alt="pizza">
+          <h4>McDonald's</h4>
+          <h5>30 Min</h5>
+        </div>
+
+
+        <div class="food-images">
+          <img class="pizza" src="mcpizza.jpeg" alt="pizza">
+          <h4>La Pino'z Pizza</h4>
+          <h5>25 Min</h5>
+        </div>
+
+
+        <div class="food-images">
+          <img class="pizza" src="bikera.jpeg" alt="">
+          <h4>Bikanervala</h4>
+          <h5>20 Min</h5>
+
+        </div>
+        <div class="food-images">
+          <img class="pizza" src="bgking.png" alt="">
+          <h4>Burgur King</h4>
+          <h5>30 Min</h5>
+
+        </div>
+
+
+        <div class="food-images">
+          <img class="pizza" src="bgra.jpeg" alt="">
+          <h4>Brijbhog</h4>
+          <h5>20 Min</h5>
+
+        </div>
+
+        <div class="food-images">
+          <img class="pizza" src="kwality.jpeg" alt="">
+          <h4>Kwality Wall's </h4>
+          <h5>25 Min</h5>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- First tab content for js -->
+  <div class="tab-contents active-tab" id="square">
+
+    <section>
+      <h1>Delivery Restaurants in Agra</h1>
+
+
+      <div class="row">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s1.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Upavihar -Tasty Thindi</h4>
+              <p>Mithai SouthIndian...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>24 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s2.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Nithya ,Amirtham</h4>
+              <p>SS North-Indian...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 150 for one</h5>
+              <h6>36 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s4.avif" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Domino's Pizza</h4>
+              <p>Pizza, Pastha , Sea Food...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="row-1">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s3.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>SS Hyederabad Biryani</h4>
+              <p>Biryani SeaFood ,North-Indian...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 220 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s5.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>WOW ,Mommos</h4>
+              <p>Momos, FastFoods...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 120 for one</h5>
+              <h6>28 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s6.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Anjappar</h4>
+              <p>South-Indian , Beverages....</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.5 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 150 for one</h5>
+              <h6>29 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+      <!-- first image -->
+
+      <div class="row-2">
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s7.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Sardhar Ji Da Dhaba</h4>
+              <p>North-Indian</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.5 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 225 for one</h5>
+              <h6>44 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s8.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Madura Cafe</h4>
+              <p>North Indian Egg Biryani...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.4 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 180 for one</h5>
+              <h6>44 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s9.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>New Agra Restaurant</h4>
+              <p>North-Indian, South-Indian..</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 150 for one</h5>
+              <h6>26 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!--Second tab content for js -->
+  <div class="tab-contents" id="circle">
+    <section>
+      <h1>Delivery Restaurants in Gagra</h1>
+
+
+      <div class="row">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="ultipizza.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Star Ultimate Pizza</h4>
+              <p>FastFoods, Pastha , Beverag...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.0 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>29 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row2.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Pind Balluchi</h4>
+              <p>North Indian , Mughlai chi...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.6 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>36 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row3.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Cheese Cake & Co</h4>
+              <p>Bakery...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="row-1">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row4.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Haldiram's</h4>
+              <p>North-Indian, South-Indian...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row5.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Bhawna Sweets</h4>
+              <p>Mithai, Desserts, Bakery...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>28 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row6.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>La Pino'z Pizza</h4>
+              <p>Pizza, Pasta, Italian....</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>25 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="row-2">
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row8.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Sardhar Ji Da Dhaba</h4>
+              <p>North-Indian</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 250 for one</h5>
+              <h6>41 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row7.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Syndey Cafe</h4>
+              <p>Pizza ,Pastha, Street...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.6 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>54 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="row9.jpeg" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>New Agra Restaurant</h4>
+              <p>North-Indian, South-Indian..</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 150 for one</h5>
+              <h6>26 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!--Third tab content for js -->
+  <div class="tab-contents" id="circle1">
+
+    <section>
+      <h1>Delivery Restaurants in magra</h1>
+
+
+      <div class="row">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s10.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Star Ultimate Pizza</h4>
+              <p>FastFoods, Pastha , Beverag...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.0 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>29 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s11.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Pind Balluchi</h4>
+              <p>North Indian , Mughlai chi...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.6 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>36 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s12.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Cheese Cake & Co</h4>
+              <p>Bakery...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="row-1">
+
+        <!-- first square image -->
+
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s13.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Haldiram's</h4>
+              <p>North-Indian, South-Indian...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 200 for one</h5>
+              <h6>38 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s14.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Bhawna Sweets</h4>
+              <p>Mithai, Desserts, Bakery...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>28 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s15.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>La Pino'z Pizza</h4>
+              <p>Pizza, Pasta, Italian....</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>25 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <div class="row-2">
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s16.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Sardhar Ji Da Dhaba</h4>
+              <p>North-Indian</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 250 for one</h5>
+              <h6>41 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- second square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s17.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>Syndey Cafe</h4>
+              <p>Pizza ,Pastha, Street...</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.6 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 100 for one</h5>
+              <h6>54 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- third square image -->
+
+        <div class="square-images">
+          <div class="zomato">
+            <img class="hot" src="s18.png" alt="">
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <h4>New Agra Restaurant</h4>
+              <p>North-Indian, South-Indian..</p>
+            </div>
+
+
+            <div class="rating">
+              <button>3.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i></button>
+              <h5>₹ 150 for one</h5>
+              <h6>26 Min</h6>
+
+            </div>
+          </div>
+          <div class="last-text">
+            <img src="max.png" alt="">
+            <p>Follow All Max Safety Measures to Ensure Your Food is Safe</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- this is locations collections of taj -->
+
+  <div class="locations">
+
+
+    <div class="loaction-status">
+      <h1>Collections</h1>
+      <div class="joint">
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Agra, based on trends</p>
+        <button>All Collections In agra <i class="fa-solid fa-caret-right"></i></button>
+      </div>
+
+      <div class="combine">
+        <div class="both">
+          <div class="tajimage">
+            <img src="taj1.png" alt="taj-image">
+          </div>
+
+
+          <div class="links">
+            <a href="#">6 Taj View Restaurants </a>
+            <a href="#"> 5 Places <i class="fa-solid fa-caret-right"></i> </a>
+
+          </div>
+        </div>
+
+
+        <div class="both">
+          <div class="tajimage">
+            <img src="taj2.png" alt="taj-image">
+          </div>
+
+
+          <div class="links">
+            <a href="#">6 Taj View Restaurants </a>
+            <a href="#"> 5 Places <i class="fa-solid fa-caret-right"></i> </a>
+          </div>
+        </div>
+
+        <div class="both">
+          <div class="tajimage">
+            <img src="taj3.avif" alt="taj-image">
+          </div>
+
+
+          <div class="links">
+            <a href="#">6 Taj View Restaurants </a>
+            <a href="#"> 5 Places <i class="fa-solid fa-caret-right"></i> </a>
+          </div>
+        </div>
+
+
+        <div class="both">
+          <div class="tajimage">
+            <img src="taj4.avif" alt="taj-image">
+          </div>
+
+
+          <div class="links">
+            <a href="#">6 Taj View Restaurants </a>
+            <a href="#"> 5 Places <i class="fa-solid fa-caret-right"></i> </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- this is box-button one -->
+
+  <section class="last-section">
+    <div class="data">
+      <div class="prop">
+        <h1>Popular Localities in and around <span> Agra </span></h1>
+
+
+        <div class="direction">
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Tajjanj</h3>
+                <h5>432 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Civil Lines</h3>
+                <h5>229 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Agra Cantt</h3>
+                <h5>109 Places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="direction">
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Sikandra</h3>
+                <h5>199 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Mantola</h3>
+                <h5>125 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Kandari</h3>
+                <h5>102 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="direction">
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Kamla Nager</h3>
+                <h5>104 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Rakabganj</h3>
+                <h5>74 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+
+
+          <div class="state">
+            <button>
+              <div class="variable">
+                <h3>Seemore</h3>
+                <h5>104 places</h5>
+              </div>
+              <div class="symbol">
+                <p>></p>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <!-- this is accordion one -->
+
+  <div class="faq">
+
+    <ul class="accordion">
+      <h2>Explore options near me</h2>
+      <li>
+
+        <input type="radio" name="accordion" id="first">
+        <label for="first">Popular cuisines near me</label>
+
+        <div class="content">
+          Bakery food near me . Beverages food near me . Biryani food near me . Burger food near me . Chinese food near
+          me . Continental food near me . Desserts food near me . Ice Cream food near me . Italian food near me . Mithai
+          food near meMomos food near me . Mughlai food near me . North Indian food near me . Pasta food near me . Pizza
+          food near me . Rolls food near meSandwich food near me . Shake food near me . South Indian food near me .
+          Street food near me
+        </div>
+      </li>
+
+
+      <li>
+
+        <input type="radio" name="accordion" id="second">
+        <label for="second">Popular restaurant types near me</label>
+
+        <div class="content">
+          Bakeries near me . Bars near meBeverage Shops near me . Bhojanalya near me . Cafés near me . Casual Dining
+          near me . Clubs near me . Dessert Parlors near me . Dhabas near me . Fine Dining near me . Food Courts near me
+          . Food Trucks near me . Kiosks near me . Lounges near me . Paan Shop near me . Pubs near me . Quick Bites near
+          me . Sweet Shops near me
+        </div>
+      </li>
+
+      <li>
+
+        <input type="radio" name="accordion" id="third">
+        <label for="third">Cities We Deliver To</label>
+
+        <div class="content content1">
+          <div class="span1">
+            <p>Hyederabad</p>
+            <p>Ahmedabad</p>
+            <p>Delhi NCR</p>
+            <p>Nashik</p>
+            <p>Amritsar</p>
+          </div>
+          <div class="span1">
+            <p>Kolkata</p>
+            <p>Chennai</p>
+            <p>Chandigarh</p>
+            <p>Ooty</p>
+            <p>Kanpur</p>
+          </div>
+          <div class="span1">
+            <p>Ranchi</p>
+            <p>Puducherry</p>
+            <p>Strinagar</p>
+            <p>Mumbai</p>
+            <p>Goa</p>
+          </div>
+          <div class="span1">
+            <p>Lucknow</p>
+            <p>Kochi</p>
+            <p>Indore</p>
+            <p>Patna</p>
+            <p>Cuttock</p>
+          </div>
+          <div class="span1">
+            <p>Jammu</p>
+            <p>Manipur</p>
+            <p>Mysore</p>
+            <p>Udaipur</p>
+            <p>Vijayawada</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+  </div>
+
+
+
+
+  <!-- this is footer -->
+
+
+  <footer>
+    <div class="foot-one">
+      <div class="f1">
+        <div class="log1">
+          <img class="logo" src="logo.png" alt="">
+        </div>
+        <div class="btns">
+          <button><img src="flag.png" alt="">India <i class="fa-solid fa-caret-down"></i></button>
+          <button>English <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+      </div>
+      <div class="f2">
+        <div class="pat1">
+          <h4>ABOUT ZOMATO</h4>
+          <a href="">Who We Are</a>
+          <a href="">Blog</a>
+          <a href="">Work With Us</a>
+          <a href="">Investor Relations</a>
+          <a href="">Report Fraud</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="pat1">
+          <h4>ZOMAVERSE</h4>
+          <a href="#">Zomato</a>
+          <a href="#">Blinkit</a>
+          <a href="#">Feeding India</a>
+          <a href="#">Hyperpure</a>
+          <a href="#">Zomaland</a>
+        </div>
+        <div class="pat1">
+          <h4>FOR Restaurants</h4>
+          <a href="">Partner With Us</a>
+          <a href="">Apps For You</a>
+          <div class="grow">
+            <h4>For Enterprises</h5>
+              <p>Zomato For Enterprise</p>
+          </div>
+        </div>
+        <div class="pat1">
+          <h4>Leatn More</h5>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="pat1 pat2">
+          <h4>Social Links</h4>
+
+          <div class="zom">
+            <img src="social.png" alt="">
+          </div>
+          <img src="appstore.png" alt="">
+          <img src="playstore.png" alt="">
+          <img src="" alt="">
+        </div>
+      </div>
+      <hr class="yarn">
+      <div class="f3">
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+          Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights
+          reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="script.js">
+
+
+  </script>
+
+
+</body>
+
+</html>
